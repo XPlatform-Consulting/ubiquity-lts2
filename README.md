@@ -32,7 +32,7 @@ A library and utilities to interact with the EVault Long-Term Storage Service (L
 
 ## Setup
 
-## Ubiquity LTS2 Upload Utility[bin/ubiquity_lts2_upload](./bin/ubiquity_lts2_upload)
+## Ubiquity LTS2 Upload Utility [bin/ubiquity_lts2_upload](./bin/ubiquity_lts2_upload)
 
 An executable that facilitate the upload of files to LTS2
 
