@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+
+begin
+  require 'ubiquity/lts2/upload/cli'
+rescue LoadError
+  lib_path = File.expand_path('../../lib', __FILE__)
+  unless $:.include?(lib_path)
+    $:.unshift(lib_path)
+    #warn("Retrying to load Ubiquity-LTS2 after adding #{lib_path} to $LOAD_PATH. The GEM may not be installed correctly.")
+    retry
+  end
+  abort("Failed to load the Ubiquity-LTS2 gem. Exception: #{$!}")
+end
+
+cli.run
